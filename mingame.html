@@ -1,0 +1,162 @@
+<html>
+<head>
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Arial;
+		padding: 10px;
+		background: #f1f1f1;
+	}
+
+	/* Header/Blog Title */
+	.header {
+		padding: 30px;
+		text-align: center;
+		background-image: url(rog.jpeg);
+	}
+
+	.header h1 {
+		font-size: 50px;
+		color: white;
+	}
+
+	/* Style the top navigation bar */
+	.topnav {
+		overflow: hidden;
+		background-color: #333;
+	}
+
+	/* Style the topnav link */
+	.topnav a{
+		float: left;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+
+	/* Change color on hover */
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	} 
+
+	/* Create two u unequal columns that floats next to each other */
+	/* Left column */
+	.leftcolum {
+		float: left;
+		width: 75%;
+	}  
+
+	/* Right column */
+	.rightcolum {
+		float: left;
+		width: 25%;
+		background-color: #f1f1f1;
+		padding-left: 20px;
+	}
+
+	/* Fake image */
+	.fakeimg {
+		background-color: #aaa;
+		width: 100%;
+		padding: 20px;
+	}
+
+	/* Add a card effect for articles */
+	.card {
+		background-color: white;
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+	/* clear float after the columns */
+	.row::after {
+		content:  "";
+		display: table;
+		clear: both;
+	}
+
+	/* Footer */
+	.foter {
+		padding: 20px;
+		text-align: center;
+		background: #ddd;
+		margin-top: 20px;
+	}
+
+	/* Responsive layout - when the screen is less than 800px wide, make the twocolumns stack on top of each other instead of next to each  other */
+	@media screen and (max-width: 800px) {
+		.leftcolum, .rightcolum {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	@media screen and (max-width: 400px) {
+		.topnav a {
+			float: none;
+			width: 100px;
+		}
+	}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>GAMINGZONE</h1>
+<p>Tempatnya para gamer mencari game favorit</p>
+</div>
+
+<div class="topnav">
+	<a href="game.html">DASHBOARD</a>
+	<a href="gamenu.html">MENU</a>
+	<a href="mingame.html">CP ADMIN</a>
+</div> 
+
+<div class="row">
+	<div class="leftcolum">
+		<div class="card">
+			<h2>INSTAGRAM</h2>
+			<h5></h5>
+		<img src="CP.jpeg" width="100%"> 
+			<p>WARNING!!!!</p>
+			<p>AKUN INSTAGRAM SHOP REAL! jika ada pihak yang mengatas namakan GAMINGZONE itu FAKE</p>
+		</div>
+		<div class="card">
+			<h2>WHATSAPP</h2>
+			<h5></h5>
+			<img src="wa.jpeg"> 
+			<p>WARNING!</p>
+			<p>Dilarang spam </p>
+		</div>
+	</div>
+	<div class="rightcolum">
+	<div class="card">
+		<h2>GAME FAVORIT</h2>
+		<img src="pbb.png" width="100%">
+		<P>Favoritnya di GAMINGZONE</P>
+	</div>
+	<div class="card">
+		<h3>GAME TERLARIS</h3>
+		<img src="GG.jpeg" width="100%">
+		<img src="efot.jpeg" width="100%">
+		<img src="aov.jpeg" width="100%">
+	</div>
+	<div class="card">
+		<h3>Follow Me</h3>
+		<P>Some text..</P>
+	</div>
+</div>
+</div>
+
+<div class="footer">
+<h2>Footer</h2>
+</div>
+</body>
+</html>
